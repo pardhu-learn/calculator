@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.calculator {
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    border-radius: 20px;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+    width: 360px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.display {
+    background: #222;
+    color: #fff;
+    font-size: 2.5em;
+    padding: 20px;
+    text-align: right;
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 10px #1a1a1a, inset -5px -5px 10px #2a2a2a;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.button {
+    background: linear-gradient(145deg, #e0e0e0, #f0f0f0);
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #c1c1c1, -5px -5px 10px #ffffff;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background: linear-gradient(145deg, #f0f0f0, #ffffff);
+    box-shadow: 5px 5px 10px #b5b5b5, -5px -5px 10px #ffffff;
+}
+
+.button:active {
+    box-shadow: inset 5px 5px 10px #b1b1b1, inset -5px -5px 10px #ffffff;
+}
+
+.operator {
+    background: linear-gradient(145deg, #ff7f50, #ff6347);
+    color: #fff;
+    box-shadow: 5px 5px 10px #cc6a3f, -5px -5px 10px #ff9f59;
+}
+
+.operator:hover {
+    background: linear-gradient(145deg, #ff6347, #ff4500);
+}
+
+.operator:active {
+    box-shadow: inset 5px 5px 10px #cc6a3f, inset -5px -5px 10px #ff9f59;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+.equals {
+    background: linear-gradient(145deg, #4caf50, #45a049);
+    color: #fff;
+    box-shadow: 5px 5px 10px #3e8e41, -5px -5px 10px #5cd964;
+}
+
+.equals:hover {
+    background: linear-gradient(145deg, #45a049, #388e3c);
+}
+
+.equals:active {
+    box-shadow: inset 5px 5px 10px #3e8e41, inset -5px -5px 10px #5cd964;
+}
